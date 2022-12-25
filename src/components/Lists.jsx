@@ -91,10 +91,9 @@ const Lists = () => {
       <Grid
         container
         sx={{
-          width: '800px',
           mb: '20px',
           mt: '20px',
-          justifyContent: 'space-between',
+          justifyContent: 'center',
           alignItems: 'center',
         }}
       >
@@ -102,17 +101,18 @@ const Lists = () => {
           sx={{
             background: '#1976d2',
             padding: '0.70rem',
-            color: '#fff',
             borderRadius: '10px',
             fontSize: '17px',
           }}
         >
           {activeTodos?.length} todos left
         </Typography>
-        <Button onClick={handleAllTodos}>All</Button>
-        <Button onClick={handleALLActiveTodos}>Active</Button>
-        <Button onClick={handleAllDoneTodos}>Completed</Button>
-        <Button onClick={handleClearTodos}>Clear All</Button>
+        <Grid style={{ display: 'flex', gap: '20px', flexWrap: 'wrap' }}>
+          <Button onClick={handleAllTodos}>All</Button>
+          <Button onClick={handleALLActiveTodos}>Active</Button>
+          <Button onClick={handleAllDoneTodos}>Completed</Button>
+          <Button onClick={handleClearTodos}>Clear All</Button>
+        </Grid>
       </Grid>
       <Divider />
     </>
