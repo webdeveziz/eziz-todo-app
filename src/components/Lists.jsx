@@ -101,6 +101,7 @@ const Lists = () => {
           sx={{
             background: '#1976d2',
             padding: '0.70rem',
+            color: '#fff',
             borderRadius: '10px',
             fontSize: '17px',
           }}
